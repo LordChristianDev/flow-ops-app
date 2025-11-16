@@ -7,9 +7,6 @@ A web-app for developers to link their GitHub (or similar) and visualize their a
 ### Framework
 - **Svelte 5** - Latest version with runes for reactive state management
 
-<!-- ### Backend Framework
-- **Laravel:** - Latest version with latest features and security updates -->
-
 ### Styling
 - **TailwindCSS** - Utility-first CSS framework
 - **Custom Theme** - Neutral color palette optimized for both light and dark modes
