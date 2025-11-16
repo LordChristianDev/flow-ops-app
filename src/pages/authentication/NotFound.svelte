@@ -3,7 +3,7 @@
 </script>
 
 <svelte:head>
-	<title>Page Not Found - DevPulse</title>
+	<title>Page Not Found - FlowOps</title>
 </svelte:head>
 
 <div class="min-h-[calc(100vh-300px)] flex items-center justify-center p-4" in:fade={{ duration: 300 }}>

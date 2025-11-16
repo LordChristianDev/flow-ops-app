@@ -36,7 +36,7 @@
 </script>
 
 <svelte:head>
-	<title>Login - DevPulse</title>
+	<title>Login - FlowOps</title>
 </svelte:head>
 
 <div class="min-h-screen flex items-center justify-center p-4" in:fade={{ duration: 300 }}>
@@ -47,7 +47,7 @@
 					<span class="text-white font-bold text-2xl">D</span>
 				</div>
 				<h1 class="text-2xl font-bold mb-2">Welcome Back</h1>
-				<p class="text-gray-600 dark:text-gray-400">Sign in to your DevPulse account</p>
+				<p class="text-gray-600 dark:text-gray-400">Sign in to your GitHub account</p>
 			</div>
 
 			<div class="mt-8 flex-1 grid grid-cols-1">

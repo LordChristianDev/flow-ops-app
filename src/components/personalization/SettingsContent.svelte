@@ -14,7 +14,7 @@
 </script>
 
 <svelte:head>
-	<title>Settings - DevPulse</title>
+	<title>Settings - FlowOps</title>
 </svelte:head>
 
 <div class="max-w-3xl mx-auto" in:fade={{ duration: 300 }}>

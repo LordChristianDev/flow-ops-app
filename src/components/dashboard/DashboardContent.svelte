@@ -16,7 +16,7 @@
 </script>
 
 <svelte:head>
-	<title>Dashboard - DevPulse</title>
+	<title>Dashboard - FlowOps</title>
 </svelte:head>
 
 <div class="max-w-7xl mx-auto">

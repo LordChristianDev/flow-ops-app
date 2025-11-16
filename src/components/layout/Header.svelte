@@ -26,7 +26,7 @@
 					<span class="text-white font-bold text-lg">D</span>
 				</div>
 				<h1 class="text-xl font-bold bg-linear-to-r from-primary-600 to-primary-800 bg-clip-text text-transparent">
-					DevPulse
+					FlowOps
 				</h1>
 			</div>
 		</div>

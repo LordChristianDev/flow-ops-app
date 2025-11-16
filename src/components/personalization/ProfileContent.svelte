@@ -51,9 +51,10 @@
     }
 </script>
 
-<!-- No <svelte:head> in regular Svelte -->
-<!-- Put this in index.html instead -->
-<!-- <title>Profile - DevPulse</title> -->
+
+<svelte:head>
+	<title>Profile - FlowOps</title>
+</svelte:head>
 
 <div class="max-w-4xl mx-auto" in:fade={{ duration: 300 }}>
     <h1 class="text-3xl font-bold mb-6">Profile</h1>

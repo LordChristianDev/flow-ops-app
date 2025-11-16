@@ -55,10 +55,11 @@
         <!-- Mobile brand -->
         <div class="p-6 border-b border-gray-200 dark:border-gray-700 lg:hidden">
             <div class="flex items-center gap-2">
+                <img src="flowops_logo.png" alt="FlowOps Logo" class="w-8 h-8">
                 <div class="w-8 h-8 bg-linear-to-br from-primary-500 to-primary-700 rounded-lg flex items-center justify-center">
                     <span class="text-white font-bold text-lg">D</span>
                 </div>
-                <h2 class="text-xl font-bold">DevPulse</h2>
+                <h2 class="text-xl font-bold">FlowOps</h2>
             </div>
         </div>
 

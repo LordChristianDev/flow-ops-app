@@ -67,7 +67,7 @@ export const mockUser: User = {
 	id: 1,
 	name: 'Alex Developer',
 	username: 'alexdev',
-	email: 'alex@devpulse.dev',
+	email: 'alex@flowops.dev',
 	avatar: 'https://api.dicebear.com/7.x/avataaars/svg?seed=Alex',
 	githubConnected: true,
 };
