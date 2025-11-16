@@ -1,4 +1,4 @@
-# DevPulse
+# FlowOps
 
 A web-app for developers to link their GitHub (or similar) and visualize their activity—commits, languages, streaks, project summaries. Kind of like “your dev dashboard”.
 
