@@ -17,7 +17,7 @@
 	<title>Settings - FlowOps</title>
 </svelte:head>
 
-<div class="max-w-3xl mx-auto" in:fade={{ duration: 300 }}>
+<div class="mx-auto overflow-y-auto max-h-[calc(100vh-56px)]" in:fade={{ duration: 300 }}>
 	<h1 class="text-3xl font-bold mb-6">Settings</h1>
 
 	<div class="space-y-6">

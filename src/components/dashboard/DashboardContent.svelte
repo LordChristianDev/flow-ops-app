@@ -19,7 +19,7 @@
 	<title>Dashboard - FlowOps</title>
 </svelte:head>
 
-<div class="max-w-7xl mx-auto">
+<div class="mx-auto overflow-y-auto max-h-[calc(100vh-56px)]">
 	<div class="mb-8" in:fade={{ duration: 300 }}>
 		<h1 class="text-3xl font-bold mb-2">Dashboard</h1>
 		<p class="text-gray-600 dark:text-gray-400">Welcome back! Here's your development overview.</p>
