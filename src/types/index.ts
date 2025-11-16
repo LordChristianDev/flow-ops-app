@@ -1,3 +1,11 @@
+import { type Icon } from '@lucide/svelte';
+
+export type NavProp = {
+	path: string;
+	label: string;
+	icon: typeof Icon;
+};
+
 export type User = {
 	id: number;
 	name: string;
