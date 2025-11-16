@@ -5,7 +5,6 @@
 
   import Header from '@/components/layout/Header.svelte';
   import Sidebar from '@/components/layout/Sidebar.svelte';
-  import Footer from '@/components/layout/Footer.svelte';
   
   let { children } = $props();
 
@@ -45,13 +44,12 @@
     <div class="flex flex-1">
       <Sidebar isOpen={sidebarOpen} {closeSidebar} />
       
-      <main class="flex-1 flex flex-col">
+      <main class="flex-1 flex flex-col max-h-screen">
         <div class="flex-1 p-6" in:fade={{ duration: 200 }}>
           {#key $location}
             {@render children()}
           {/key}
         </div>
-        <Footer />
       </main>
     </div>
   </div>
