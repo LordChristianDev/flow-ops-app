@@ -1,28 +1,10 @@
 <script lang="ts">
     import { push } from 'svelte-spa-router';
+    import { navItems } from '@/stores/data/layout-data';
 
     export let isOpen = false;
     export let closeSidebar: () => void;
 
-    const navItems = [
-        {
-            path: '/',
-            label: 'Dashboard',
-            icon: 'M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6'
-        },
-        {
-            path: '/profile',
-            label: 'Profile',
-            icon: 'M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z'
-        },
-        {
-            path: '/settings',
-            label: 'Settings',
-            icon: 'M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35...'
-        }
-    ];
-
-    // Regular Svelte: get path from the browser
     let currentPath = '/';
 
     $: if (typeof window !== 'undefined') {
@@ -48,7 +30,7 @@
 
 <!-- Sidebar -->
 <aside
-    class="fixed lg:sticky top-0 left-0 h-screen bg-white dark:bg-gray-800 shadow-lg z-40 transition-transform duration-300 {isOpen ? 'translate-x-0' : '-translate-x-full lg:translate-x-0'} w-64"
+    class="fixed lg:sticky top-0 left-0 min-h-screen bg-white dark:bg-gray-800 shadow-lg z-40 transition-transform duration-300 {isOpen ? 'translate-x-0' : '-translate-x-full lg:translate-x-0'} w-56"
 >
     <div class="h-full flex flex-col">
 
@@ -56,9 +38,6 @@
         <div class="p-6 border-b border-gray-200 dark:border-gray-700 lg:hidden">
             <div class="flex items-center gap-2">
                 <img src="flowops_logo.png" alt="FlowOps Logo" class="w-8 h-8">
-                <div class="w-8 h-8 bg-linear-to-br from-primary-500 to-primary-700 rounded-lg flex items-center justify-center">
-                    <span class="text-white font-bold text-lg">D</span>
-                </div>
                 <h2 class="text-xl font-bold">FlowOps</h2>
             </div>
         </div>
@@ -72,10 +51,8 @@
                     class="flex items-center gap-3 px-4 py-3 rounded-lg transition-colors {currentPath === item.path
                         ? 'bg-primary-100 dark:bg-primary-900/30 text-primary-700 dark:text-primary-400 font-medium'
                         : 'hover:bg-gray-100 dark:hover:bg-gray-700 text-gray-700 dark:text-gray-300'}"
-                >
-                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d={item.icon}></path>
-                    </svg>
+                >   
+                    <item.icon />
                     <span>{item.label}</span>
                 </a>
             {/each}

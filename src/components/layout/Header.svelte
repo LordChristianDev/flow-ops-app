@@ -17,13 +17,13 @@
 				class="lg:hidden p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
 				aria-label="Toggle sidebar"
 			>
-				<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-				</svg>
+				<div class="w-8 h-8 bg-linear-to-br from-primary-500 to-primary-700 rounded-lg flex items-center justify-center">
+					<img src="flowops_logo.png" alt="FlowOps Logo" class="w-6 h-6">
+				</div>
 			</button>
 			<div class="flex items-center gap-2">
 				<div class="w-8 h-8 bg-linear-to-br from-primary-500 to-primary-700 rounded-lg flex items-center justify-center">
-					<span class="text-white font-bold text-lg">D</span>
+					<img src="flowops_logo.png" alt="FlowOps Logo" class="w-6 h-6">
 				</div>
 				<h1 class="text-xl font-bold bg-linear-to-r from-primary-600 to-primary-800 bg-clip-text text-transparent">
 					FlowOps
