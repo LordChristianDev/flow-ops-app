@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { onMount } from "svelte";
 	import { Chart, registerables } from "chart.js";
+	import { Card, CardContent } from '@/lib/components/ui/card';
 
 	import { theme } from "@/lib/hooks/theme";
 	import type { RepositoryProp } from "@/lib/types";
@@ -99,9 +100,13 @@
 	}
 </script>
 
-<div class="card">
-	<h3 class="text-lg font-semibold mb-4">Top Repositories by Stars</h3>
-	<div class="h-64">
-		<canvas bind:this={canvas}></canvas>
-	</div>
+<div>
+	<Card>
+		<CardContent>
+		<h3 class="text-lg font-semibold mb-4">Top Repositories by Stars</h3>
+		<div class="h-64">
+			<canvas bind:this={canvas}></canvas>
+		</div>
+		</CardContent>
+	</Card>
 </div>
