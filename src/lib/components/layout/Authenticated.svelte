@@ -3,12 +3,11 @@
   import { fade } from 'svelte/transition';
   import { push, location } from 'svelte-spa-router';
 
-  import Header from '@/lib/components/layout/Header.svelte';
-  import Sidebar from '@/lib/components/layout/Sidebar.svelte';
+	import AppSidebar from './AppSidebar.svelte';
+	import AppBar from './AppBar.svelte';
   
   let { children } = $props();
 
-  let sidebarOpen = $state(false);
   let isAuthenticated = $state(false);
   let isLoading = $state(true);
 
@@ -24,13 +23,7 @@
     isLoading = false;
   });
 
-  function toggleSidebar() {
-    sidebarOpen = !sidebarOpen;
-  }
 
-  function closeSidebar() {
-    sidebarOpen = false;
-  }
 </script>
 
 {#if isLoading}
@@ -39,10 +32,10 @@
   </div>
 {:else if isAuthenticated}
   <div class="min-h-screen flex flex-col">
-    <Header {toggleSidebar} />
+    <AppBar />
     
-    <div class="flex flex-1">
-      <Sidebar isOpen={sidebarOpen} {closeSidebar} />
+    <div class="flex flex-1 max-h-[calc(100vh-56px)]">
+      <AppSidebar/>
       
       <main class="flex-1 flex flex-col max-h-screen">
         <div class="flex-1 p-6" in:fade={{ duration: 200 }}>

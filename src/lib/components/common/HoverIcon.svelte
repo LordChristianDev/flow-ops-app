@@ -1,7 +1,7 @@
 <script lang="ts">
   import { Columns2 } from "@lucide/svelte";
-  import { cn } from "$lib/utils";
-  import { Button } from "$lib/components/ui/button";
+  import { cn } from "@/lib/utils";
+  import { Button } from "@/lib/components/ui/button";
 
   export let src: string;
   export let className: string = "";
