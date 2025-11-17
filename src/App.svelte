@@ -1,9 +1,11 @@
 <script lang="ts">
+	import { location } from 'svelte-spa-router';
+
+	import routes from '@/lib/router';
+
 	import './app.css';
 	import Router from 'svelte-spa-router';
-	import AuthenticatedLayout from '@/components/layout/Authenticated.svelte';
-	import routes from '@/router';
-	import { location } from 'svelte-spa-router';
+	import AuthenticatedLayout from '@/lib/components/layout/Authenticated.svelte';
 
 	// Check if current route needs auth
 	$: needsAuth = $location !== '/login' && $location !== '*';
